@@ -1,0 +1,188 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*header*/
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 25px 0;
+  background: black;
+  color: white;
+  height: 50px;
+  font-size: 20px;
+  border-bottom: 3px solid white;
+  align-items: center;
+}
+
+.section{
+  display: flex;
+  align-items: center;
+}
+
+.Logo{
+  display: flex;
+  margin-left: 20%;
+  /*border-left: 2px double white;*/
+}
+
+.Slogan{
+  display: flex;
+  padding: 25px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.Menu_item1, .Menu_item2, .Menu_item3, .Menu_item4, .Menu_item5{
+  display: flex;
+  padding: 25px 25px 25px 25px;
+  text-align: center;
+  line-height: 1.3;
+  border-left: 2px double white;
+}
+
+
+
+.Menu_item5{
+  margin-right: 90px;
+  border-right: 2px double white;
+}
+
+.imgFirst{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.img1{
+  width: 100%;
+  height: auto;
+}
+
+.choise{
+  margin-bottom:3px;
+  background: black;
+}
+
+.container{
+  margin-top: 0;
+  padding-bottom: 50px;
+  flex-direction: row;
+}
+
+.row{
+  flex-direction: row;
+  padding-top: 50px;
+}
+
+/*.Buttons{*/
+/*  text-align: center;*/
+/*  display: flex;*/
+/*}*/
+
+
+.Buttons{
+  text-align: center;
+}
+.col-sm{
+  flex-direction: row;
+  width: 30%;
+}
+
+.footer{
+  background: black;
+  color: white;
+  padding-top: 25px;
+}
+
+.col-sm-3{
+  margin-top: 50px;
+  padding: 0;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+.col-sm-12{
+  text-align: left;
+}
+.icon{
+  align-content: center;
+  padding: 10px;
+}
+
+
+.gradient-button{
+  width: auto;
+  max-height: 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #CC5803 0%, #FFF07C 51%, #FFC15E 100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+  color: black;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+
+.gradient-button:hover{
+  background-position: right center;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-size: 200% auto;
+  transition: .5s;
+  color: black;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.gradient-button:hover{
+  background-image: linear-gradient(to right, #CC5803 0%, #FFF07C 51%, #FFC15E 100%);
+}
+
+
+
+@media (max-width: 1110px) {
+  .Menu_item1, .Menu_item2, .Menu_item3, .Menu_item4, .Menu_item5 {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+  .Slogan{
+    font-size: 14pt;
+    /*display: none;*/
+  }
+  .row{
+    flex-direction: column;
+    padding-right: 25px;
+  }
+  .col-sm-3, .col-sm-12{
+    text-align: center;
+  }
+}

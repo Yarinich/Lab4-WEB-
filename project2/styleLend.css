@@ -1,0 +1,278 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*header*/
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 25px 0;
+  background: black;
+  color: white;
+  height: 50px;
+  font-size: 20px;
+  border-bottom: 3px solid white;
+  align-items: center;
+}
+
+.section{
+  display: flex;
+  align-items: center;
+}
+
+.Logo{
+  display: flex;
+  margin-left: 20%;
+  /*border-left: 2px double white;*/
+}
+
+.Slogan{
+  display: flex;
+  padding: 25px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.Menu_item1, .Menu_item2, .Menu_item3, .Menu_item4, .Menu_item5{
+  display: flex;
+  padding: 25px 25px 25px 25px;
+  text-align: center;
+  line-height: 1.3;
+  border-left: 2px double white;
+}
+
+
+
+.Menu_item5{
+  margin-right: 90px;
+  border-right: 2px double white;
+}
+
+
+
+
+@media (max-width: 1110px) {
+  .Menu_item1, .Menu_item2, .Menu_item3, .Menu_item4, .Menu_item5 {
+    display: none;
+  }
+
+}
+
+
+
+.firsSection, .secondSection, .thirdSection, .fourthSection{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  text-align: center;
+}
+
+.firsSection {
+  background: #7B6D8D;
+}
+
+.secondSection, .fourthSection {
+  background: #EAE1DF;
+}
+
+.thirdSection{
+  background: #FFFCF7;
+}
+
+.paragraph{
+  text-align: center;
+  line-height: 1.3;
+  font-size: 50pt;
+  padding-top: 100px;
+  width: 100%;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+
+
+
+.firsSectionText, .secondSectionText, .thirdSectionText, .fourthSectionText{
+  margin: 0;
+  justify-content: space-between;
+  color: black;
+  display: block;
+}
+
+.firsSectionText{
+  background: #7B6D8D;
+}
+
+.secondSectionText, .fourthSectionText{
+  background: #EAE1DF;
+}
+
+.thirdSectionText{
+  background: #FFFCF7;
+}
+
+.text{
+  text-align: justify;
+  line-height: 1.3;
+  font-size: 20pt;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 50px;
+}
+
+.imgFirst, .imgSecond{
+ text-align: center;
+  padding-bottom: 50px;
+}
+
+.imgSecond{
+  padding-bottom: 0;
+}
+
+.img1{
+  width: 75%;
+  height: auto;
+}
+
+
+
+.forButton{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gradient-button, .gradient-button1, .gradient-button2{
+  width: 50%;
+  align-items: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+  color: black;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.gradient-button2{
+  background-image: linear-gradient(to right, #45050C 0%, #D84727 51%, indianred 100%);
+}
+
+.gradient-button1{
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+}
+
+.gradient-button{
+  background-image: linear-gradient(to right, #CC5803 0%, #FFF07C 51%, #FFC15E 100%);
+}
+
+.gradient-button:hover, .gradient-button1:hover, .gradient-button2:hover{
+  background-position: right center;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-size: 200% auto;
+  transition: .5s;
+  color: black;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.gradient-button:hover{
+  background-image: linear-gradient(to right, #CC5803 0%, #FFF07C 51%, #FFC15E 100%);
+}
+
+.gradient-button1:hover{
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+}
+
+.gradient-button2:hover{
+  background-image: linear-gradient(to right, #45050C 0%, #D84727 51%, indianred 100%);
+}
+
+.container{
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.Buttons{
+  text-align: center;
+}
+
+.footer{
+  background: black;
+  color: white;
+  padding-top: 25px;
+}
+
+.col-sm-3{
+  margin-top: 50px;
+  padding: 0;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+.col-sm-12{
+  text-align: left;
+}
+.icon{
+  align-content: center;
+  padding: 10px;
+}
+
+@media (max-width: 720px) {
+  .paragraph{
+    font-size: 30pt;
+  }
+  .text{
+    font-size: 14pt;
+  }
+  .gradient-button{
+    font-size: 12pt;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .Slogan{
+    font-size: 14pt;
+    /*display: none;*/
+  }
+  .row{
+    flex-direction: column;
+    padding-right: 25px;
+  }
+  .col-sm-3, .col-sm-12{
+    text-align: center;
+  }
+}
+
+
+
+
+
+
